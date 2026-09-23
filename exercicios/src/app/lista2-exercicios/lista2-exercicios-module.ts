@@ -8,4 +8,9 @@ import { ExibicaoDeMensagem } from './exibicao-de-mensagem/exibicao-de-mensagem'
   declarations: [ExibicaoDeMensagem],
   imports: [CommonModule, Lista2ExerciciosRoutingModule],
 })
-export class Lista2ExerciciosModule {}
+export class Lista2ExerciciosModule {
+  mensagemVisivel: boolean = true;
+
+  
+
+}
