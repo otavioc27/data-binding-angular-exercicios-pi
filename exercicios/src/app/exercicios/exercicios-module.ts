@@ -16,7 +16,19 @@ import { Exercicio10 } from './exercicio10/exercicio10';
 import { Exercicio11 } from './exercicio11/exercicio11';
 
 @NgModule({
-  declarations: [Exercicio1, Exercicio2, Exercicio3, Exercicio4, Exercicio5, Exercicio6, Exercicio7, Exercicio8, Exercicio9, Exercicio10, Exercicio11],
+  declarations: [
+    Exercicio1,
+    Exercicio2,
+    Exercicio3,
+    Exercicio4,
+    Exercicio5,
+    Exercicio6,
+    Exercicio7,
+    Exercicio8,
+    Exercicio9,
+    Exercicio10,
+    Exercicio11,
+  ],
   imports: [CommonModule, ExerciciosRoutingModule, FormsModule],
 })
 export class ExerciciosModule {}
