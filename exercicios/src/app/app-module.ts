@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { SituacaoDoUsuario } from './lista-2-exercicios/situacao-do-usuario/situacao-do-usuario';
+import { SituacaoDoUsuario } from './lista2-exercicios/situacao-do-usuario/situacao-do-usuario';
 
 @NgModule({
-  declarations: [App, SituacaoDoUser],
+  declarations: [App],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
