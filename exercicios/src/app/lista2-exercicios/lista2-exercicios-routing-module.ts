@@ -5,6 +5,7 @@ import { SituacaoDoUsuario } from './situacao-do-usuario/situacao-do-usuario';
 import { VerificacaoDeIdade } from './verificacao-de-idade/verificacao-de-idade';
 import { SituacaoDoEstoque } from './situacao-do-estoque/situacao-do-estoque';
 import { ListaDeNomes } from './lista-de-nomes/lista-de-nomes';
+import { ListaVazia } from '../lista-vazia/lista-vazia';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {  path: 'verificacao-de-idade', component: VerificacaoDeIdade },
   {  path: 'situacao-do-estoque', component: SituacaoDoEstoque},
   {  path: 'lista-de-nomes', component: ListaDeNomes},
+  {  path: 'lista-vazia', component: ListaVazia},
 
 ];
 
