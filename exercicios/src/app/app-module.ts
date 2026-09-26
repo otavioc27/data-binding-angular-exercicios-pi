@@ -7,9 +7,10 @@ import { App } from './app';
 import { SituacaoDoUsuario } from './lista2-exercicios/situacao-do-usuario/situacao-do-usuario';
 import { ListaVazia } from './lista-vazia/lista-vazia';
 import { CoresAlternadas } from './cores-alternadas/cores-alternadas';
+import { ListaProdutos } from './lista-produtos/lista-produtos';
 
 @NgModule({
-  declarations: [App, ListaVazia, CoresAlternadas],
+  declarations: [App, ListaVazia, CoresAlternadas, ListaProdutos],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
