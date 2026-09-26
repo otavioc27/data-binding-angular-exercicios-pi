@@ -9,9 +9,17 @@ import { ListaVazia } from './lista-vazia/lista-vazia';
 import { CoresAlternadas } from './cores-alternadas/cores-alternadas';
 import { ListaProdutos } from './lista-produtos/lista-produtos';
 import { ClassificacaoProdutos } from './classificacao-produtos/classificacao-produtos';
+import { PromocaoProdutos } from './promocao-produtos/promocao-produtos';
 
 @NgModule({
-  declarations: [App, ListaVazia, CoresAlternadas, ListaProdutos, ClassificacaoProdutos],
+  declarations: [
+    App,
+    ListaVazia,
+    CoresAlternadas,
+    ListaProdutos,
+    ClassificacaoProdutos,
+    PromocaoProdutos,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
