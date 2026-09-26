@@ -4,6 +4,7 @@ import { ExibicaoDeMensagem } from  './exibicao-de-mensagem/exibicao-de-mensagem
 import { SituacaoDoUsuario } from './situacao-do-usuario/situacao-do-usuario';
 import { VerificacaoDeIdade } from './verificacao-de-idade/verificacao-de-idade';
 import { SituacaoDoEstoque } from './situacao-do-estoque/situacao-do-estoque';
+import { CoresAlternadas } from '../cores-alternadas/cores-alternadas';
 
 
 const routes: Routes = [
@@ -11,7 +12,11 @@ const routes: Routes = [
   {  path: 'exibicao-de-mensagem', component: ExibicaoDeMensagem },
   {  path: 'situacao-do-usuario', component: SituacaoDoUsuario },
   {  path: 'verificacao-de-idade', component: VerificacaoDeIdade },
-  {  path: 'situacao-do-estoque', component: SituacaoDoEstoque},
+  {  path: 'situacao-do-estoque', component: SituacaoDoEstoque },
+  {  path: 'cores-alternadas', component: CoresAlternadas },
+
+
+
 
 
 ];
