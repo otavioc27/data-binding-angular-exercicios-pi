@@ -6,6 +6,7 @@ import { VerificacaoDeIdade } from './verificacao-de-idade/verificacao-de-idade'
 import { SituacaoDoEstoque } from './situacao-do-estoque/situacao-do-estoque';
 import { CoresAlternadas } from '../cores-alternadas/cores-alternadas';
 import { ListaProdutos } from '../lista-produtos/lista-produtos';
+import { ClassificacaoProdutos } from '../classificacao-produtos/classificacao-produtos';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {  path: 'situacao-do-estoque', component: SituacaoDoEstoque },
   {  path: 'cores-alternadas', component: CoresAlternadas },
   {  path: 'lista-produtos', component: ListaProdutos },
+  {  path: 'classificacao-produtos', component: ClassificacaoProdutos },
 
 
 
