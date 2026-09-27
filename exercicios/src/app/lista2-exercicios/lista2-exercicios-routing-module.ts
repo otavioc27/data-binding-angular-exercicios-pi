@@ -8,6 +8,7 @@ import { CoresAlternadas } from '../cores-alternadas/cores-alternadas';
 import { ListaProdutos } from '../lista-produtos/lista-produtos';
 import { ClassificacaoProdutos } from '../classificacao-produtos/classificacao-produtos';
 import { PromocaoProdutos } from '../promocao-produtos/promocao-produtos';
+import { ProdutosDisponiveis } from '../produtos-disponiveis/produtos-disponiveis';
 
 
 const routes: Routes = [
@@ -20,6 +21,8 @@ const routes: Routes = [
   {  path: 'lista-produtos', component: ListaProdutos },
   {  path: 'classificacao-produtos', component: ClassificacaoProdutos },
   {  path: 'promocao-produtos', component: PromocaoProdutos },
+  {  path: 'produtos-disponiveis', component: ProdutosDisponiveis },
+
 
 
 

@@ -10,6 +10,7 @@ import { CoresAlternadas } from './cores-alternadas/cores-alternadas';
 import { ListaProdutos } from './lista-produtos/lista-produtos';
 import { ClassificacaoProdutos } from './classificacao-produtos/classificacao-produtos';
 import { PromocaoProdutos } from './promocao-produtos/promocao-produtos';
+import { ProdutosDisponiveis } from './produtos-disponiveis/produtos-disponiveis';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PromocaoProdutos } from './promocao-produtos/promocao-produtos';
     ListaProdutos,
     ClassificacaoProdutos,
     PromocaoProdutos,
+    ProdutosDisponiveis,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

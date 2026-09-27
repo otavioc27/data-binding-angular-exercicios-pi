@@ -1,0 +1,12 @@
+<label>
+  <input type="checkbox" [(ngModel)]="somenteDisponiveis">
+  Exibir somente produtos disponíveis
+</label>
+
+<div *ngFor="let produto of produtos">
+  <ng-container *ngIf="!somenteDisponiveis || produto.estoque > 0">
+    <p>
+      {{ produto.nome }} - R$ {{ produto.preco }}
+    </p>
+  </ng-container>
+</div>
