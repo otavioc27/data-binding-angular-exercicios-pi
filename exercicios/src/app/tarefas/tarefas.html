@@ -1,42 +1,47 @@
 <h1>Lista de Tarefas</h1>
 
-<div *ngIf="tarefas.length > 0; else semTarefas">
+@if (tarefas.length > 0) {
 
-  <div
-    *ngFor="let tarefa of tarefas"
-    [ngClass]="tarefa.prioridade"
-    [class.concluida]="tarefa.concluida"
-  >
+  @for (tarefa of tarefas; track tarefa.id) {
 
-    <h3>{{ tarefa.titulo }}</h3>
+    <div
+      [ngClass]="tarefa.prioridade"
+      [class.concluida]="tarefa.concluida"
+    >
 
-    <p>Responsável: {{ tarefa.responsavel }}</p>
+      <h3>{{ tarefa.titulo }}</h3>
 
-    <p>Prioridade: {{ tarefa.prioridade }}</p>
+      <p>Responsável: {{ tarefa.responsavel }}</p>
 
-    <p>
-      Situação:
-      {{ tarefa.concluida ? 'Concluída' : 'Pendente' }}
-    </p>
+      <p>Prioridade: {{ tarefa.prioridade }}</p>
 
-    <button (click)="alterarSituacao(tarefa)">
-      {{ tarefa.concluida ? 'Marcar como pendente' : 'Concluir tarefa' }}
-    </button>
+      <p>
+        Situação:
+        {{ tarefa.concluida ? 'Concluída' : 'Pendente' }}
+      </p>
 
-    <hr>
+      <button (click)="alterarSituacao(tarefa)">
+        {{ tarefa.concluida ? 'Marcar como pendente' : 'Concluir tarefa' }}
+      </button>
 
-  </div>
+      <hr>
+
+    </div>
+
+  } @empty {
+
+    <p>Não existem tarefas cadastradas.</p>
+
+  }
 
   <h2>Resumo</h2>
 
   <p>Total de tarefas: {{ tarefas.length }}</p>
-
   <p>Tarefas concluídas: {{ tarefasConcluidas() }}</p>
-
   <p>Tarefas pendentes: {{ tarefasPendentes() }}</p>
 
-</div>
+} @else {
 
-<ng-template #semTarefas>
   <p>Não existem tarefas cadastradas.</p>
-</ng-template>
+
+}
