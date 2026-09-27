@@ -13,6 +13,7 @@ import { PromocaoProdutos } from './promocao-produtos/promocao-produtos';
 import { ProdutosDisponiveis } from './produtos-disponiveis/produtos-disponiveis';
 import { Cadastro } from './cadastro/cadastro';
 import { Tarefas } from './tarefas/tarefas';
+import { PainelProjetos } from './painel-projetos/painel-projetos';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { Tarefas } from './tarefas/tarefas';
     ProdutosDisponiveis,
     Cadastro,
     Tarefas,
+    PainelProjetos,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

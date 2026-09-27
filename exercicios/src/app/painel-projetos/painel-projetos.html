@@ -1,0 +1,27 @@
+<h1>Painel de Projetos Integradores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Equipe</th>
+      <th>Nota</th>
+      <th>Status</th>
+      <th>Entregue</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (projeto of projetos; track projeto.id) {
+      <tr>
+        <td>{{ projeto.id }}</td>
+        <td>{{ projeto.titulo }}</td>
+        <td>{{ projeto.equipe }}</td>
+        <td>{{ projeto.nota }}</td>
+        <td>{{ projeto.status }}</td>
+        <td>{{ projeto.entregue ? 'Sim' : 'Não' }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
