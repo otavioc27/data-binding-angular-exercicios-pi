@@ -12,6 +12,7 @@ import { ClassificacaoProdutos } from './classificacao-produtos/classificacao-pr
 import { PromocaoProdutos } from './promocao-produtos/promocao-produtos';
 import { ProdutosDisponiveis } from './produtos-disponiveis/produtos-disponiveis';
 import { Cadastro } from './cadastro/cadastro';
+import { Tarefas } from './tarefas/tarefas';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { Cadastro } from './cadastro/cadastro';
     PromocaoProdutos,
     ProdutosDisponiveis,
     Cadastro,
+    Tarefas,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

@@ -10,7 +10,7 @@ import { ClassificacaoProdutos } from '../classificacao-produtos/classificacao-p
 import { PromocaoProdutos } from '../promocao-produtos/promocao-produtos';
 import { ProdutosDisponiveis } from '../produtos-disponiveis/produtos-disponiveis';
 import { Cadastro } from '../cadastro/cadastro';
-
+import { Tarefas} from '../tarefas/tarefas';
 
 const routes: Routes = [
 
@@ -24,6 +24,8 @@ const routes: Routes = [
   {  path: 'promocao-produtos', component: PromocaoProdutos },
   {  path: 'produtos-disponiveis', component: ProdutosDisponiveis },
   {  path: 'cadastro', component: Cadastro },
+  {  path: 'tarefas', component: Tarefas },
+   
   
 
 
