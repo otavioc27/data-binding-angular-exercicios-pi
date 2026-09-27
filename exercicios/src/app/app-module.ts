@@ -11,6 +11,7 @@ import { ListaProdutos } from './lista-produtos/lista-produtos';
 import { ClassificacaoProdutos } from './classificacao-produtos/classificacao-produtos';
 import { PromocaoProdutos } from './promocao-produtos/promocao-produtos';
 import { ProdutosDisponiveis } from './produtos-disponiveis/produtos-disponiveis';
+import { Cadastro } from './cadastro/cadastro';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProdutosDisponiveis } from './produtos-disponiveis/produtos-disponiveis
     ClassificacaoProdutos,
     PromocaoProdutos,
     ProdutosDisponiveis,
+    Cadastro,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
